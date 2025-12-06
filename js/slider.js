@@ -1,10 +1,8 @@
-// Simple hero banner photo slider
-
 document.addEventListener('DOMContentLoaded', function () {
   const slides = document.querySelectorAll('.hero-slider .slide');
   const navButtons = document.querySelectorAll('.hero-slider .slider-nav button');
   let currentIndex = 0;
-  let slideInterval = setInterval(nextSlide, 5000);
+  let slideInterval;
 
   function showSlide(index) {
     slides.forEach((slide, i) => {
@@ -12,6 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
       navButtons[i].classList.toggle('active', i === index);
     });
     currentIndex = index;
+
+    // Hentikan interval lama jika ada
+    if (slideInterval) clearInterval(slideInterval);
+
+    // Jika slide adalah video, tunggu sampai video selesai
+    const video = slides[index].querySelector('video');
+    if (video) {
+      video.currentTime = 0;
+      video.play();
+      video.addEventListener('ended', nextSlide, { once: true });
+    } else {
+      // Slide gambar otomatis pindah setelah 5 detik
+      slideInterval = setInterval(nextSlide, 5000);
+    }
   }
 
   function nextSlide() {
@@ -21,9 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   navButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-      clearInterval(slideInterval);
       showSlide(index);
-      slideInterval = setInterval(nextSlide, 5000);
     });
   });
 
