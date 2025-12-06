@@ -1,0 +1,199 @@
+/* Dark Mode Styles */
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark a {
+    color: #bb86fc;
+}
+
+body.dark a:hover {
+    color: #3700b3;
+}
+
+body.dark .grax_tm_topbar {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+body.dark .grax_tm_topbar .menu ul li a {
+    color: #ffffff;
+}
+
+body.dark .grax_tm_topbar .menu ul li.current a,
+body.dark .grax_tm_topbar .menu ul li a:hover {
+    color: #bb86fc;
+}
+
+body.dark .grax_tm_mobile_menu .topbar_inner {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #ffffff;
+}
+
+body.dark .grax_tm_mobile_menu .dropdown {
+    background-color: #121212;
+    border-bottom: 1px solid #333;
+}
+
+body.dark .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a:hover {
+    color: #bb86fc;
+}
+
+body.dark .grax_tm_portfolio {
+    background-color: #1a1a1a;
+}
+
+body.dark .grax_tm_news {
+    background-color: #1a1a1a;
+}
+
+body.dark .grax_tm_news .news_list ul li .details .title a {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_news .news_list ul li .details .title a:hover {
+    color: #bb86fc;
+}
+
+body.dark .grax_tm_contact {
+    background-color: #121212;
+}
+
+body.dark .grax_tm_contact .info_list ul li span.first,
+body.dark .grax_tm_contact .info_list ul li span.second,
+body.dark .grax_tm_contact .info_list ul li a {
+    color: #ffffff !important;
+}
+
+body.dark .grax_tm_copyright {
+    background-color: #1f1f1f;
+}
+
+body.dark .grax_tm_copyright .copy p,
+body.dark .grax_tm_copyright .social ul li a {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_button a {
+    background-color: #bb86fc;
+    border-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark .grax_tm_button a:hover {
+    background-color: transparent !important;
+    color: #bb86fc;
+}
+
+body.dark .grax_tm_settings {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark .grax_tm_settings.opened {
+    background-color: #ffffff;
+}
+
+body.dark .grax_tm_settings .icon {
+    background-color: #121212;
+}
+
+body.dark .grax_tm_settings .icon .svg {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_settings .title {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_settings .direction li a {
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_settings .direction li a.active {
+    opacity: 1;
+}
+
+body.dark .grax_tm_settings .colors li a {
+    border: 1px solid #e0e0e0;
+}
+
+body.dark .grax_tm_settings .colors li.bl {
+    display: none;
+}
+
+body.dark .grax_tm_settings .colors li.wh {
+    display: inline-block;
+}
+
+/* Scrollbar for dark mode */
+body.dark ::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.dark ::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+    background-color: #bb86fc;
+    border-radius: 10px;
+    border: 2px solid #121212;
+}
+
+/* Additional dark mode adjustments */
+body.dark .grax_tm_down .line_wrapper:before {
+    background-color: #bb86fc;
+}
+
+body.dark .progressbar {
+    background-color: rgb(0, 0, 0);
+}
+
+body.dark .progressbar .line {
+    background-color: rgb(255, 255, 255);
+}
+
+body.dark .grax_tm_about {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark .grax_tm_settings .wrapper .title {
+    color: #000000;
+
+}
+
+body.dark .progressbar .text {
+    color: #ffffff;
+}
+
+
+/* Change skills list item text color to white in dark mode */
+body.dark .grax_tm_about .list ul li .list_inner span {
+    color: #ffffff !important;
+}
+
+/* Change arrow SVG icons beside skills to white in dark mode */
+body.dark .grax_tm_about .list ul li .list_inner img.svg {
+    filter: brightness(0) invert(1);
+}
+
+body.dark .grax_tm_title_holder {
+    color: #ffffff;
+}
+
+body.dark .social {
+    filter: brightness(0) invert(1);
+}
+
+body.dark .list_inner .svg {
+    filter: brightness(0) invert(1);
+}
+
