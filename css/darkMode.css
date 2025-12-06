@@ -14,6 +14,23 @@ body.dark a:hover {
     color: #3700b3;
 }
 
+body.dark .grax_tm_topbar .logo .light {
+    display: none;
+}
+
+body.dark .grax_tm_topbar .logo .dark {
+    display: block;
+}
+
+/* saat scroll (animate), tukar ke logo putih */
+body.dark .grax_tm_topbar.animate .logo .light {
+    display: block;
+}
+
+body.dark .grax_tm_topbar.animate .logo .dark {
+    display: none;
+}
+
 /* DEFAULT: transparan di dark mode */
 body.dark .grax_tm_topbar {
     background-color: transparent;
@@ -178,7 +195,7 @@ body.dark .grax_tm_progress_part .line {
 }
 
 body.dark .grax_tm_progress_part .bar {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(124, 124, 124);
 }
 
 body.dark .grax_tm_about {
