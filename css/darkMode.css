@@ -1,5 +1,6 @@
 /* Dark Mode Styles */
 
+
 body.dark {
     background-color: #121212;
     color: #e0e0e0;
@@ -13,11 +14,20 @@ body.dark a:hover {
     color: #3700b3;
 }
 
+/* DEFAULT: transparan di dark mode */
 body.dark .grax_tm_topbar {
-    background-color: #2c2c2c;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+    box-shadow: none;
 }
 
+/* SCROLL EFFECT: baru jadi solid */
+body.dark .grax_tm_topbar.animate {
+    background-color: #111111;
+    padding: 25px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+
+/* TEXT & LOGO saat animate */
 body.dark .grax_tm_topbar .menu ul li a {
     color: #ffffff;
 }
@@ -27,18 +37,17 @@ body.dark .grax_tm_topbar .menu ul li a:hover {
     color: #bb86fc;
 }
 
-body.dark .grax_tm_mobile_menu .topbar_inner {
-    background-color: #1f1f1f;
-    border-bottom: 1px solid #ffffff;
+body.dark .grax_tm_topbar.animate .menu ul li a {
+    color: #ffffff;
 }
 
 body.dark .grax_tm_mobile_menu .dropdown {
-    background-color: #121212;
+    background-color: #ffffff;
     border-bottom: 1px solid #333;
 }
 
 body.dark .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a {
-    color: #e0e0e0;
+    color: #000000;
 }
 
 body.dark .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a:hover {
@@ -152,11 +161,23 @@ body.dark .grax_tm_down .line_wrapper:before {
     background-color: #bb86fc;
 }
 
-body.dark .progressbar {
+body.dark .grax_tm_progress_part {
     background-color: rgb(0, 0, 0);
 }
 
-body.dark .progressbar .line {
+body.dark .grax_tm_progress_part h3 {
+    color: #ffffff;
+}
+
+body.dark .grax_tm_progress_part span {
+    color: #ffffff;
+}
+
+body.dark .grax_tm_progress_part .line {
+    background-color: rgb(255, 255, 255);
+}
+
+body.dark .grax_tm_progress_part .bar {
     background-color: rgb(255, 255, 255);
 }
 
@@ -185,7 +206,7 @@ body.dark .grax_tm_about .list ul li .list_inner img.svg {
     filter: brightness(0) invert(1);
 }
 
-body.dark .grax_tm_title_holder {
+body.dark .grax_tm_title_holder h3 {
     color: #ffffff;
 }
 
@@ -196,4 +217,3 @@ body.dark .social {
 body.dark .list_inner .svg {
     filter: brightness(0) invert(1);
 }
-
